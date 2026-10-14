@@ -1,0 +1,513 @@
+1.print("Hello World")
+
+2. Add Two Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Sum:", a + b)
+
+3. Check Even or Odd
+n = int(input("Enter a number: "))
+if n % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+4. Check Positive, Negative or Zero
+n = int(input("Enter a number: "))
+if n > 0:
+    print("Positive")
+elif n < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+5. Find Largest of Two Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a > b:
+    print("Largest:", a)
+else:
+    print("Largest:", b)
+
+6. Find Largest of Three Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+if a >= b and a >= c:
+    print("Largest:", a)
+elif b >= a and b >= c:
+    print("Largest:", b)
+else:
+    print("Largest:", c)
+
+7. Find Square of a Number
+n = int(input("Enter a number: "))
+print("Square:", n * n)
+
+8. Find Factorial
+n = int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact = fact * i
+print("Factorial:", fact)
+
+9. Print Numbers from 1 to 10
+for i in range(1, 11):
+    print(i)
+
+10. Multiplication Table
+n = int (input ("Enter a number: ")) 
+for i in range (1, 11):
+    print (n, "x", i, "=", n * i)
+
+11. Check Prime Number
+n = int(input("Enter a number: "))
+count = 0
+for i in range(1, n + 1):
+    if n % i == 0:
+        count = count + 1
+if count == 2:
+    print("Prime number")
+else:
+    print("Not a prime number")
+
+12. Reverse a Number
+n = int(input("Enter a number: "))
+rev = 0
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+print("Reverse:", rev)
+
+13. Palindrome Number
+n = int(input("Enter a number: "))
+original = n
+rev = 0
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+if original == rev:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+14. Sum of Numbers Using While Loop
+n = int(input("Enter a number: "))
+total = 0
+i = 1
+while i <= n:
+    total = total + i
+    i = i + 1
+print("Sum:", total)
+
+15. Simple Calculator Using While Loop
+while True:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    op = input("Enter +, -, *, /: ")
+    if op == "+":
+        print("Result:", a + b)
+    elif op == "-":
+        print("Result:", a - b)
+    elif op == "*":
+        print("Result:", a * b)
+    elif op == "/":
+        print("Result:", a / b)
+    else:
+        print("Invalid operator")
+    choice = input("Continue? yes/no: ")
+    if choice == "no":
+        break
+
+
+16. Swap Two Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+a, b = b, a
+print("First number:", a)
+print("Second number:", b)
+
+17. Find Average of Three Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+average = (a + b + c) / 3
+print("Average:", average)
+
+18. Check Leap Year
+year = int(input("Enter year: "))
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+19. Count Digits
+n = int(input("Enter a number: "))
+count = 0
+while n > 0:
+    n = n // 10
+    count = count + 1
+print("Number of digits:", count)
+
+
+
+20. Sum of Digits
+n = int(input("Enter a number: "))
+total = 0
+while n > 0:
+    digit = n % 10
+    total = total + digit
+    n = n // 10
+print("Sum of digits:", total)
+
+21. Check Armstrong Number
+n = int(input("Enter a number: "))
+original = n
+total = 0
+while n > 0:
+    digit = n % 10
+    total = total + digit ** 3
+    n = n // 10
+if original == total:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+
+22. Print Even Numbers
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+
+23. Print Odd Numbers
+for i in range(1, 21):
+    if i % 2 != 0:
+        print(i)
+24. Print Numbers in Reverse
+for i in range(10, 0, -1):
+    print(i)
+
+25. Sum of Even Numbers
+total = 0
+for i in range(1, 11):
+    if i % 2 == 0:
+        total = total + i
+print("Sum:", total)
+
+26. Fibonacci Series
+n = int(input("Enter number of terms: "))
+a = 0
+b = 1
+for i in range(n):
+    print(a)
+    a, b = b, a + b
+
+27. Check Vowel or Consonant
+ch = input("Enter a character: ")
+if ch in "aeiouAEIOU":
+    print("Vowel")
+else:
+    print("Consonant")
+
+28. Count Vowels in a String
+text = input("Enter a word: ")
+count = 0
+for ch in text:
+    if ch in "aeiouAEIOU":
+        count = count + 1
+print("Number of vowels:", count)
+
+29. Reverse a String
+text = input("Enter a word: ")
+print("Reverse:", text[::-1])
+
+30. String Palindrome
+text = input("Enter a word: ")
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+31. Count Characters
+text = input("Enter a word: ")
+print("Number of characters:", len(text))
+
+32. Find Largest Number in a List
+numbers = [10, 25, 7, 45, 18]
+largest = numbers[0]
+for n in numbers:
+    if n > largest:
+        largest = n
+print("Largest:", largest)
+
+33. Find Smallest Number in a List
+numbers = [10, 25, 7, 45, 18]
+smallest = numbers[0]
+for n in numbers:
+    if n < smallest:
+        smallest = n
+print("Smallest:", smallest)
+
+34. Count Even and Odd Numbers
+numbers = [10, 15, 20, 25, 30, 35]
+even = 0
+odd = 0
+for n in numbers:
+    if n % 2 == 0:
+        even = even + 1
+    else:
+        odd = odd + 1
+print("Even numbers:", even)
+print("Odd numbers:", odd)
+
+35. Generate a Simple Pattern
+for i in range(1, 6):
+    print("*" * i)
+Output:
+*
+**
+***
+****
+*****
+
+36. Nested Loop Pattern
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+Output:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+37. Simple Function
+def add(a, b):
+    return a + b
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+print("Sum:", add(x, y))
+
+38. Function to Check Even or Odd
+def check(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+n = int(input("Enter a number: "))
+print(check(n))
+
+39. Find Prime Numbers from 1 to 50
+for n in range(2, 51):
+    count = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            count = count + 1
+    if count == 2:
+        print(n)
+
+40. Simple Menu Program
+while True:
+    print("\n1. Add")
+    print("2. Subtract")
+    print("3. Exit")
+    choice = input("Enter choice: ")
+    if choice == "3":
+        break
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    if choice == "1":
+        print("Result:", a + b)
+    elif choice == "2":
+        print("Result:", a - b)
+    else:
+        print("Invalid choice")
+
+41. Calculate Area of a Circle
+r = float(input("Enter radius: "))
+area = 3.14 * r * r
+print("Area:", area)
+
+42. Calculate Area of a Rectangle
+length = float(input("Enter length: "))
+width = float(input("Enter width: "))
+area = length * width
+print("Area:", area)
+
+43. Calculate Area of a Triangle
+base = float(input("Enter base: "))
+height = float(input("Enter height: "))
+
+area = 0.5 * base * height
+print("Area:", area)
+
+44. Convert Celsius to Fahrenheit
+c = float(input("Enter Celsius: "))
+f = (c * 9 / 5) + 32
+print("Fahrenheit:", f)
+
+45. Convert Kilometers to Miles
+km = float(input("Enter kilometers: "))
+miles = km * 0.621371
+print("Miles:", miles)
+
+46. Calculate Simple Interest
+p = float(input("Enter principal: "))
+r = float(input("Enter rate: "))
+t = float(input("Enter time: "))
+si = (p * r * t) / 100
+print("Simple Interest:", si)
+
+47. Calculate Total and Percentage
+m1 = int(input("Enter marks 1: "))
+m2 = int(input("Enter marks 2: "))
+m3 = int(input("Enter marks 3: "))
+total = m1 + m2 + m3
+percentage = total / 3
+print("Total:", total)
+print("Percentage:", percentage)
+
+
+48. Check Voting Eligibility
+age = int(input("Enter age: "))
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+49. Check Driving Eligibility
+age = int(input("Enter age: "))
+if age >= 18:
+    print("You can drive")
+else:
+    print("You cannot drive")
+
+50. Check Greater Number
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a > b:
+    print(a, "is greater")
+elif b > a:
+    print(b, "is greater")
+else:
+    print("Both are equal")
+
+51. Print Multiplication Tables from 1 to 5
+for n in range(1, 6):
+    print("Table of", n)
+    for i in range(1, 11):
+        print(n, "x", i, "=", n * i)
+    print()
+
+52. Sum of First 10 Numbers
+total = 0
+for i in range(1, 11):
+    total = total + i
+print("Sum:", total)
+
+53. Find Power of a Number
+a = int(input("Enter number: "))
+b = int(input("Enter power: "))
+print("Answer:", a ** b)
+
+54. Check Divisibility by 5
+n = int(input("Enter number: "))
+if n % 5 == 0:
+    print("Divisible by 5")
+else:
+    print("Not divisible by 5")
+
+55. Print Numbers Divisible by 3
+for i in range(1, 51):
+    if i % 3 == 0:
+        print(i)
+
+56. Find Sum of Odd Numbers
+total = 0
+for i in range(1, 11):
+    if i % 2 != 0:
+        total = total + i
+print("Sum:", total)
+
+
+57. Count Numbers Greater Than 10
+numbers = [5, 12, 8, 20, 15, 3]
+count = 0
+for n in numbers:
+    if n > 10:
+        count = count + 1
+print("Count:", count)
+
+58. Find Sum of List Elements
+numbers = [10, 20, 30, 40, 50]
+total = 0
+for n in numbers:
+    total = total + n
+print("Sum:", total)
+
+59. Find Average of List
+numbers = [10, 20, 30, 40, 50]
+total = 0
+for n in numbers:
+    total = total + n
+average = total / len(numbers)
+print("Average:", average)
+
+60. Search an Element in a List
+numbers = [10, 20, 30, 40, 50]
+n = int(input("Enter number to search: "))
+if n in numbers:
+    print("Number found")
+else:
+    print("Number not found")
+
+61. Count a Particular Character
+text = input("Enter a word: ")
+ch = input("Enter character: ")
+count = 0
+for x in text:
+    if x == ch:
+        count = count + 1
+print("Count:", count)
+
+62. Convert String to Uppercase
+text = input("Enter text: ")
+print(text.upper())
+
+63. Convert String to Lowercase
+text = input("Enter text: ")
+print(text.lower())
+
+64. Check String Length
+text = input("Enter text: ")
+print("Length:", len(text))
+
+65. Count Words
+text = input("Enter a sentence: ")
+words = text.split()
+print("Number of words:", len(words))
+
+66. Remove Spaces
+text = input("Enter text: ")
+print(text.replace(" ", ""))
+
+
+67. Find Maximum Using max()
+numbers = [10, 25, 5, 40, 15]
+print("Maximum:", max(numbers))
+
+68. Find Minimum Using min()
+numbers = [10, 25, 5, 40, 15]
+print("Minimum:", min(numbers))
+
+69. Sort a List
+numbers = [50, 20, 40, 10, 30]
+numbers.sort()
+print(numbers)
+
+70. Remove Duplicate Values
+numbers = [10, 20, 10, 30, 20, 40]
+new_list = list(set(numbers))
+print(new_list)
